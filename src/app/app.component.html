@@ -1,0 +1,22 @@
+<div class="loading" *ngIf="loading">
+  <img src="../assets/imagenes/loading.gif">
+</div>
+
+<table class="table table-striped table-hover">
+  <thead class="bg-primary text-white">
+    <tr >
+      <th scope="col" > <h1>Agencias</h1></th>
+      <th scope="col" > <h1></h1></th>
+      <th scope="col" > <h1></h1></th>
+    </tr>
+  </thead>
+  <tbody class="">
+    <tr *ngFor="let item of Arreglo; let i = index">
+        <td align="center"> <img src="../assets/imagenes/persona.png" width="100" height="100"  ></td>
+        <td> <h5>{{item.agencia | uppercase}}</h5> 
+             <h6>{{item.distrito}}</h6>
+                 {{item.direccion}}</td>
+        <td> <button type="button" class="btn btn-success" (click)="editar(i,item)" >Success</button> </td>
+    </tr>
+  </tbody>
+</table>

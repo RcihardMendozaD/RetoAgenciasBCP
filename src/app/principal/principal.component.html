@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h4 class="modal-title">Lista Sede</h4>
+   
+</div>
+<div class="modal-body" >
+    <form [formGroup]="GrupoSede">
+        <div clasS="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="agencia"  >
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="distrito"  >
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="direccion"  >
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-sodexo-blue btn-rounded" (click)="GuardarFormulario()">Enviar</button>
+</div>
